@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mario.Plugins", "Mario.Plugins.csproj", "{B6B62C17-E1EB-85D2-52A0-37BB3D364F76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mario", "Mario.csproj", "{77BEB503-7C2D-7A1D-A59F-3B776C2AD5A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mario.Editor.Plugins", "Mario.Editor.Plugins.csproj", "{161F6C30-EA3A-CD7D-76FC-31906755D712}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6B62C17-E1EB-85D2-52A0-37BB3D364F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B62C17-E1EB-85D2-52A0-37BB3D364F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B62C17-E1EB-85D2-52A0-37BB3D364F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B62C17-E1EB-85D2-52A0-37BB3D364F76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77BEB503-7C2D-7A1D-A59F-3B776C2AD5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77BEB503-7C2D-7A1D-A59F-3B776C2AD5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77BEB503-7C2D-7A1D-A59F-3B776C2AD5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77BEB503-7C2D-7A1D-A59F-3B776C2AD5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{161F6C30-EA3A-CD7D-76FC-31906755D712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{161F6C30-EA3A-CD7D-76FC-31906755D712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{161F6C30-EA3A-CD7D-76FC-31906755D712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{161F6C30-EA3A-CD7D-76FC-31906755D712}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
