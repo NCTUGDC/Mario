@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Scripts\Manager\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Manager\PlayerStatusManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\SceneManager\StartSceneManager.cs" />
     <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
