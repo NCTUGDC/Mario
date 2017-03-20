@@ -27,6 +27,8 @@ public class GeneratingBoxBehavior : MonoBehaviour
             transform.parent.GetComponent<SpriteRenderer>().color -= new Color(0.5f, 0.5f, 0.5f, 0f);
 
         GameObject obj = Instantiate(generatingObject);
+        obj.GetComponent<GeneratedObjectBehavior>().generator
+            = gameObject.transform.parent.gameObject;
         StartCoroutine(GeneratingObject(obj));
     }
     IEnumerator GeneratingObject(GameObject obj)
