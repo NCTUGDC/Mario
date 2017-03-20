@@ -17,15 +17,15 @@ public class InventoryManager : MonoBehaviour
 
     void Start()
     {
-        print("write file");
+//        print("write file");
 
-        string fileName;
-#if UNITY_ANDROID
-        fileName = Application.persistentDataPath + "/tmp.txt";
-#else
-        fileName = Application.dataPath + "/tmp.txt";
-#endif
-        File.WriteAllText(fileName, "lalala aaaaaaaaaaaaa" );
+//        string fileName;
+//#if UNITY_ANDROID
+//        fileName = Application.persistentDataPath + "/tmp.txt";
+//#else
+//        fileName = Application.dataPath + "/tmp.txt";
+//#endif
+//        File.WriteAllText(fileName, "lalala aaaaaaaaaaaaa" );
     }
 
 }

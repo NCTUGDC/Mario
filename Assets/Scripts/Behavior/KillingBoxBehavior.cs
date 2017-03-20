@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class KillingBoxBehavior : MonoBehaviour
 {
+    [SerializeField]
+    private Sprite readySprite;
+    [SerializeField]
+    private Sprite inCoolDownSprite;
+
     private float coolDown = 0f;
 
     void OnCollisionEnter2D(Collision2D other)
@@ -14,12 +19,19 @@ public class KillingBoxBehavior : MonoBehaviour
         {
             PlayerStatusManager.Instance.LoseLife();
             coolDown = 2f;
+            gameObject.GetComponent<SpriteRenderer>().sprite = inCoolDownSprite;
         }
     }
 
     private void Update()
     {
         if (coolDown > 0)
+        {
             coolDown -= Time.deltaTime;
+            if(coolDown <= 0)
+            {
+                gameObject.GetComponent<SpriteRenderer>().sprite = readySprite;
+            }
+        }
     }
 }
