@@ -35,7 +35,7 @@ public class GeneratingBoxBehavior : MonoBehaviour
         float timeInterval = 0.5f;
 
         obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-        obj.GetComponent<BoxCollider2D>().enabled = false;
+        obj.GetComponent<Collider2D>().enabled = false;
         obj.transform.SetParent(transform);
 
         while (passTime < timeInterval)
@@ -47,7 +47,7 @@ public class GeneratingBoxBehavior : MonoBehaviour
         }
 
         obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-        obj.GetComponent<BoxCollider2D>().enabled = true;
+        obj.GetComponent<Collider2D>().enabled = true;
         obj.GetComponent<Rigidbody2D>().AddForce(new Vector3(50, 0, 0));
 
     }

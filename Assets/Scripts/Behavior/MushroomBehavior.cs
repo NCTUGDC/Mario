@@ -10,6 +10,7 @@ public class MushroomBehavior : GeneratedObjectBehavior
 
         other.gameObject.transform.localScale = other.gameObject.transform.localScale * 1.1f;
         GameManager.Instance.GetScore(10);
+        PlayerStatusManager.Instance.GainLife(1);
         Destroy(gameObject);
     }
 
