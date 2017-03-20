@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
             Destroy(this);
 
         InitialSetting();
+        DontDestroyOnLoad(gameObject);
     }
 
     private void InitialSetting()
