@@ -25,6 +25,9 @@ public class PlayerStatusManager : MonoBehaviour
     {
         life -= 1;
         print("loseLife");
+
+        GameManager.Instance.PlayerGameObject.transform.localScale /= 1.1f;
+
         if(life == 0)
         {
             print("GG");
