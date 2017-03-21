@@ -85,8 +85,10 @@
     <Compile Include="Assets\Scripts\Behavior\DraggablePanel.cs" />
     <Compile Include="Assets\Scripts\Behavior\GeneratedObjectBehavior.cs" />
     <Compile Include="Assets\Scripts\Behavior\GeneratingBoxBehavior.cs" />
+    <Compile Include="Assets\Scripts\Behavior\GetableObjectBehavior.cs" />
     <Compile Include="Assets\Scripts\Behavior\KillingBoxBehavior.cs" />
     <Compile Include="Assets\Scripts\Behavior\MushroomBehavior.cs" />
+    <Compile Include="Assets\Scripts\ClassBase.cs" />
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Scripts\Manager\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Manager\PlayerStatusManager.cs" />

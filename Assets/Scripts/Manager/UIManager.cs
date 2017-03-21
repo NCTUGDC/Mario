@@ -24,13 +24,7 @@ public class UIManager : MonoBehaviour
         }
         ableToOpenUIPage = ShowPageInput();
     }
-    //void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.A))
-    //    {
-    //        ChangeAbleToOpenUIPage(true);
-    //    }
-    //}
+
     private void Start()
     {
         StartCoroutine(ableToOpenUIPage);
