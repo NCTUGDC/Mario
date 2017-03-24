@@ -8,17 +8,21 @@ public class MushroomBehavior : GeneratedObjectBehavior
     {
         if (other.gameObject.tag != "Player")
         {
-            if(other.relativeVelocity.y == 0)
-
-            //if (Mathf.Abs(gameObject.GetComponent<Rigidbody2D>().velocity.y) < 0.01f)
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(-100, 0, 0));
+            if (other.relativeVelocity.y == 0)
+            {
+                if (other.relativeVelocity.x > 0)
+                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(-100, 0, 0));
+                else
+                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(100, 0, 0));
+            }
         }
         else
         {
+            Destroy(gameObject);
+
             other.gameObject.transform.localScale = other.gameObject.transform.localScale * 1.1f;
             GameManager.Instance.GetScore(10);
             PlayerStatusManager.Instance.GainLife(1);
-            Destroy(gameObject);
         }
     }
 
