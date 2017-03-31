@@ -81,6 +81,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Behavior\CoinBehavior.cs" />
     <Compile Include="Assets\Scripts\Behavior\DestroyOnClick.cs" />
     <Compile Include="Assets\Scripts\Behavior\DraggablePanel.cs" />
     <Compile Include="Assets\Scripts\Behavior\GeneratedObjectBehavior.cs" />

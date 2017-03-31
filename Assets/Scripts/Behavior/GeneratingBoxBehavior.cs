@@ -53,5 +53,4 @@ public class GeneratingBoxBehavior : MonoBehaviour
         obj.GetComponent<Rigidbody2D>().AddForce(new Vector3(50, 0, 0));
 
     }
-
 }

@@ -15,7 +15,13 @@ public class KillingBoxBehavior : MonoBehaviour
     {
         if (other.gameObject.tag != "Player") return;
 
-        if (coolDown <= 0)
+        if (other.relativeVelocity.y > 0)
+        {
+            //Destroy(gameObject);
+            StartCoroutine(FadingAway());
+        }
+
+        else if (coolDown <= 0)
         {
             PlayerStatusManager.Instance.LoseLife();
             coolDown = 2f;
@@ -28,10 +34,19 @@ public class KillingBoxBehavior : MonoBehaviour
         if (coolDown > 0)
         {
             coolDown -= Time.deltaTime;
-            if(coolDown <= 0)
+            if (coolDown <= 0)
             {
                 gameObject.GetComponent<SpriteRenderer>().sprite = readySprite;
             }
         }
+    }
+
+    IEnumerator FadingAway()
+    {
+        gameObject.GetComponent<SpriteRenderer>().sprite = inCoolDownSprite;
+
+        yield return new WaitForSeconds(1f);
+
+        Destroy(gameObject);
     }
 }
